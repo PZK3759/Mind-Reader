@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
         leading: const Icon(AppIcons.brain), //later change to custom icon
-        title: const Text("Mind Reader"),
+        title: const Text("NeuroThought Interceptor"),
         actions: [
           IconButton(
               onPressed: () {

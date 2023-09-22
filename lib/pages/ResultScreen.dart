@@ -18,7 +18,7 @@ class _ResultScreenState extends State<ResultScreen> {
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
         leading: const Icon(AppIcons.brain),
-        title: const Text("Mind Reader"),
+        title: const Text("NeuroThought Interceptor"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

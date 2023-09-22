@@ -27,6 +27,8 @@ class _WaitingScreenState extends State<WaitingScreen> {
           Image.asset("assets/images/app-logo.png"),
           SizedBox(height: 10,),
           SpinKitWave(color: Colors.red,),
+          Text("Capturing neurotransmitter signals.",style: TextStyle(fontSize: 25),),
+          Text("Please be patient.", style: TextStyle(fontSize: 25),),
         ],
       ),
 

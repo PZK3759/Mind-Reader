@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           Image.asset("assets/images/app-logo.png"),
           SizedBox(height: 10,),
-          SpinKitWave(color: Colors.red,),
+          SpinKitThreeInOut(color: Colors.red,),
         ],
       ),
     );

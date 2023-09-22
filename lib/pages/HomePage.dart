@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:mind_reader/Global.dart';
+import 'package:mind_reader/app_icons.dart';
 import 'package:mind_reader/pages/HelpPage.dart';
 import 'package:mind_reader/pages/WaitingScreen.dart';
 
@@ -20,7 +21,7 @@ class _HomePageState extends State<HomePage> {
         child: Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
-        leading: const Icon(Icons.adb), //later change to custom icon
+        leading: const Icon(AppIcons.brain), //later change to custom icon
         title: const Text("Mind Reader"),
         actions: [
           IconButton(

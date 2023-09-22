@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mind_reader/Global.dart';
+import 'package:mind_reader/app_icons.dart';
 import 'package:mind_reader/pages/HomePage.dart';
 
 class ResultScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _ResultScreenState extends State<ResultScreen> {
         child: Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
-        leading: const Icon(Icons.adb), //later change to custom icon
+        leading: const Icon(AppIcons.brain),
         title: const Text("Mind Reader"),
       ),
       body: Column(

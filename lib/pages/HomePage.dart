@@ -68,9 +68,7 @@ class _HomePageState extends State<HomePage> {
                 backgroundColor: MaterialStateProperty.all(Colors.redAccent),
               ),
               onPressed: () {
-
-                if(thoughtsController.text.length < 3){
-
+                if (thoughtsController.text.length < 3) {
                   Fluttertoast.showToast(
                       msg: "write something",
                       toastLength: Toast.LENGTH_SHORT,
@@ -79,14 +77,11 @@ class _HomePageState extends State<HomePage> {
                       backgroundColor: Colors.red,
                       textColor: Colors.white,
                       fontSize: 16.0);
-
-                }else{
+                } else {
                   thoughts = thoughtsController.text.trim();
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) => WaitingScreen()));
-
                 }
-
               },
               child: const Padding(
                 padding: EdgeInsets.all(15.0),

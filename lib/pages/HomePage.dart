@@ -32,6 +32,7 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Image.asset("assets/images/app-logo.png"),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text("Enter your thoughts below",

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mind_reader/Global.dart';
 import 'package:mind_reader/pages/HelpPage.dart';
+import 'package:mind_reader/pages/WaitingScreen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -54,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                   )),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           ElevatedButton(
@@ -63,6 +64,7 @@ class _HomePageState extends State<HomePage> {
             ),
               onPressed: () {
                 thoughts = thoughtsController.text.trim();
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WaitingScreen()));
               },
               child: Padding(
                 padding: const EdgeInsets.all(15.0),

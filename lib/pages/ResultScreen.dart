@@ -23,9 +23,11 @@ class _ResultScreenState extends State<ResultScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset("assets/images/resultpage-logo.png"),
-          SizedBox(height: 30,),
-          Center(
-            child: const Text(
+          const SizedBox(
+            height: 30,
+          ),
+          const Center(
+            child: Text(
               "Your thoughts were:",
               style: TextStyle(fontSize: 27),
             ),
@@ -39,7 +41,7 @@ class _ResultScreenState extends State<ResultScreen> {
               padding: const EdgeInsets.all(15.0),
               child: Text(
                 thoughts!,
-                style: TextStyle(fontSize: 35),
+                style: const TextStyle(fontSize: 35),
               ),
             ),
           ),
@@ -54,9 +56,11 @@ class _ResultScreenState extends State<ResultScreen> {
                 Navigator.pushReplacement(context,
                     MaterialPageRoute(builder: (context) => HomePage()));
               },
-              child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Text("Try Again",style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+              child: const Padding(
+                padding: EdgeInsets.all(15.0),
+                child: Text("Try Again",
+                    style:
+                        TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
               ))
         ],
       ),

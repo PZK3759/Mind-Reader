@@ -34,10 +34,13 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset("assets/images/app-logo.png"),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: Text("Enter your thoughts below",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,)),
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                )),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -59,16 +62,17 @@ class _HomePageState extends State<HomePage> {
             height: 10,
           ),
           ElevatedButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.redAccent),
-            ),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.redAccent),
+              ),
               onPressed: () {
                 thoughts = thoughtsController.text.trim();
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WaitingScreen()));
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => WaitingScreen()));
               },
-              child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: const Text(
+              child: const Padding(
+                padding: EdgeInsets.all(15.0),
+                child: Text(
                   "Read My Mind",
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),

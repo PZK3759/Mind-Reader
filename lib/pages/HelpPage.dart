@@ -17,7 +17,7 @@ class HelpPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset("assets/images/helppage-logo.png"),
-          Card(
+          const Card(
             child: Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(

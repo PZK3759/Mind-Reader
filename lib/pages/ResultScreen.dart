@@ -3,6 +3,8 @@ import 'package:mind_reader/Global.dart';
 import 'package:mind_reader/app_icons.dart';
 import 'package:mind_reader/pages/HomePage.dart';
 
+// ignore_for_file: prefer_const_constructors
+
 class ResultScreen extends StatefulWidget {
   const ResultScreen({super.key});
 
@@ -30,7 +32,7 @@ class _ResultScreenState extends State<ResultScreen> {
           const Center(
             child: Text(
               "Your thoughts were:",
-              style: TextStyle(fontSize: 27),
+              style: TextStyle(fontSize: 25),
             ),
           ),
           const SizedBox(
@@ -42,7 +44,7 @@ class _ResultScreenState extends State<ResultScreen> {
               padding: const EdgeInsets.all(15.0),
               child: Text(
                 thoughts!,
-                style: const TextStyle(fontSize: 35),
+                style: const TextStyle(fontSize: 30),
               ),
             ),
           ),
@@ -61,7 +63,7 @@ class _ResultScreenState extends State<ResultScreen> {
                 padding: EdgeInsets.all(15.0),
                 child: Text("Try Again",
                     style:
-                        TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               ))
         ],
       ),

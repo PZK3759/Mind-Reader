@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:mind_reader/pages/HomePage.dart';
 
+// ignore_for_file: prefer_const_constructors
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -31,11 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
-  void WaitForFiveSeconds() {
-
-    Future.delayed(Duration(seconds: 5), () {
+  void WaitForFiveSeconds() => Future.delayed(Duration(seconds: 5), () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
     });
-
-  }
 }

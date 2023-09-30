@@ -5,6 +5,8 @@ import 'package:mind_reader/app_icons.dart';
 import 'package:mind_reader/pages/HelpPage.dart';
 import 'package:mind_reader/pages/WaitingScreen.dart';
 
+// ignore_for_file: prefer_const_constructors
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -40,7 +42,7 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.all(8.0),
             child: Text("Enter your thoughts below",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 )),
           ),
@@ -87,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.all(15.0),
                 child: Text(
                   "Read My Mind",
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               )),
         ],
